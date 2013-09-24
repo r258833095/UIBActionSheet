@@ -11,3 +11,7 @@ UIBActionSheet
     [myActionSheet.customView addSubview:picker];
     myActionSheet.delegate = self;
     [myActionSheet showInView:self.view];
+
+回调：
+    - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{}
+    buttonIndex = 0 //取消 ，1 为 完成
